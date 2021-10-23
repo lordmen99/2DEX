@@ -1,0 +1,135 @@
+body {
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    37deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(42, 65, 91, 1) 28%,
+    rgba(4, 125, 255, 1) 100%
+  );
+  background-size: cover;
+}
+
+#window {
+  margin-top: 50px;
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.swapbox {
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  background-color: #4a4e53;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 20px;
+}
+
+#swap_button {
+  padding: 20px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 20px;
+}
+
+.row_title {
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+}
+
+.row_title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #007bff;
+}
+
+.token_select {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.token_select:hover {
+  background-color: #343a40;
+  cursor: pointer;
+}
+
+.modal-content {
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+}
+
+.modal-header {
+  background-color: #343a40;
+}
+
+.modal-title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.btn-cross {
+  font-size: 30px;
+  color: white;
+}
+
+.modal-body {
+  background-color: #4a4e53;
+  color: white;
+
+  height: 600px;
+  overflow: scroll;
+}
+
+.token_row {
+  padding: 5px 10px;
+}
+
+.token_row:hover {
+  background-color: #343a40;
+  cursor: pointer;
+}
+
+.token_list_img,
+.token_image {
+  width: 40px;
+}
+
+.token_list_text {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.swapbox_selected {
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.swapbox_selected input {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.token_text {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.gas {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  margin: 10px;
+  font-size: 19px;
+}
